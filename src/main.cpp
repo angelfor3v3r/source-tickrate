@@ -435,8 +435,8 @@ public:
 
         info("Applying hooks...\n");
 
-        // TODO: There's a chance that this virtual function might not always be index 10. Will need testing.
-        u8 *fn = get_virtual(servergame, 10);
+        // TODO: There's a chance that this virtual function might not always be index 11. Will need testing.
+        u8 *fn = get_virtual(servergame, 11);
 
         // TODO: Switch to global VMT hooks when it's available.
         auto hook_result = safetyhook::InlineHook::create(fn, Hooked_CServerGameDLL::hooked_GetTickInterval);
